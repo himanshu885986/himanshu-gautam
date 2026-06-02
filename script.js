@@ -120,6 +120,18 @@ form.addEventListener('submit', (e) => {
   }, 3000);
 });
 
+// ── Theme toggle ─────────────────────────────────────────────
+const themeToggle = document.getElementById('themeToggle');
+const savedTheme = localStorage.getItem('theme') || 'dark';
+if (savedTheme === 'light') document.documentElement.setAttribute('data-theme', 'light');
+
+themeToggle.addEventListener('click', () => {
+  const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+  const next = isLight ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+});
+
 // ── Stagger delay for grid children ─────────────────────────
 document.querySelectorAll('.skills-grid .skill-category').forEach((el, i) => {
   el.style.transitionDelay = `${i * 0.07}s`;

@@ -1,5 +1,5 @@
 /* ============================================================
-   DESIGN TOKENS
+   DESIGN TOKENS — DARK (default)
    ============================================================ */
 :root {
   --bg:          #0d0d0f;
@@ -24,6 +24,65 @@
 }
 
 /* ============================================================
+   DESIGN TOKENS — LIGHT
+   ============================================================ */
+[data-theme="light"] {
+  --bg:          #f5f5f7;
+  --bg-alt:      #ebebee;
+  --surface:     #ffffff;
+  --surface-2:   #f0f0f3;
+  --border:      #d8d8e0;
+  --accent:      #009e80;
+  --accent-dim:  rgba(0, 158, 128, 0.1);
+  --accent-glow: rgba(0, 158, 128, 0.2);
+  --text:        #14141c;
+  --text-muted:  #55556a;
+  --text-dim:    #9999aa;
+  --shadow:      0 4px 24px rgba(0,0,0,0.08);
+  --shadow-lg:   0 12px 48px rgba(0,0,0,0.12);
+}
+
+[data-theme="light"] .hero-name {
+  background: linear-gradient(135deg, #111 0%, rgba(0,0,0,0.65) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+[data-theme="light"] .hero-bg {
+  background:
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(0, 158, 128, 0.07) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 80% 80%, rgba(0, 158, 128, 0.04) 0%, transparent 50%);
+}
+
+[data-theme="light"] .grid-overlay {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+}
+
+[data-theme="light"] #navbar.scrolled {
+  background: rgba(245, 245, 247, 0.9);
+}
+
+[data-theme="light"] .avatar-initials {
+  background: var(--surface-2);
+}
+
+[data-theme="light"] .timeline::before {
+  background: linear-gradient(var(--accent), var(--border), transparent);
+}
+
+[data-theme="light"] .btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+[data-theme="light"] .btn-primary:hover {
+  background: #007d66;
+}
+
+/* ============================================================
    RESET & BASE
    ============================================================ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -41,6 +100,7 @@ body {
   line-height: 1.7;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  transition: background 0.35s ease, color 0.35s ease;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -118,6 +178,33 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   background: var(--accent-dim);
   color: var(--accent);
 }
+
+.theme-toggle {
+  width: 38px; height: 38px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 9px;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  background: transparent;
+  cursor: pointer;
+  transition: color var(--transition), border-color var(--transition), background var(--transition);
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-dim);
+}
+
+.theme-toggle svg { width: 17px; height: 17px; display: block; }
+
+/* Show sun in dark mode, moon in light mode */
+.icon-moon { display: none; }
+.icon-sun  { display: block; }
+
+[data-theme="light"] .icon-sun  { display: none; }
+[data-theme="light"] .icon-moon { display: block; }
 
 .hamburger {
   display: none;
@@ -1011,6 +1098,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 @media (max-width: 640px) {
   .nav-links { display: none; }
   .hamburger { display: flex; }
+  .theme-toggle { margin-left: auto; margin-right: 8px; }
   .section { padding: 72px 0; }
   .skills-grid { grid-template-columns: 1fr; }
   .about-stats { grid-template-columns: repeat(2, 1fr); }
