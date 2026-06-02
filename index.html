@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Himanshu Gautam — Senior Backend Engineer</title>
+  <meta name="description" content="Senior Backend Engineer with 10+ years building scalable systems in Golang, gRPC, Kubernetes, and AWS." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">HG<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting fade-in-up">Hi, I'm</p>
+      <h1 class="hero-name fade-in-up delay-1">Himanshu Gautam</h1>
+      <h2 class="hero-title fade-in-up delay-2">
+        <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-bio fade-in-up delay-3">
+        10+ years building <span class="accent">high-performance backend systems</span> — distributed services, API gateways, real-time pipelines, and cloud-native architectures at scale.
+      </p>
+      <div class="hero-actions fade-in-up delay-4">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+      <div class="hero-socials fade-in-up delay-5">
+        <a href="https://linkedin.com/in/himanshu-gautam-a6170882" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:himanshug8859@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.907 1.528-1.148C21.69 2.28 24 3.434 24 5.457z"/></svg>
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">01. About</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a <strong>solution-driven backend engineer</strong> with 10+ years of experience building scalable, high-performance systems. I specialize in <span class="accent">Golang microservices</span>, distributed systems, API design, and cloud-native infrastructure.</p>
+          <p>My career spans <strong>security, automotive, e-commerce, and SaaS</strong> — from handling 1M+ API calls/day at Toyota to building payment platforms at Fitpass. I thrive at the intersection of engineering excellence and business impact.</p>
+          <p>Outside of work, I've been recognized as a <strong>School Head Boy</strong>, a State-Level Table Tennis Silver Medalist, and recipient of multiple company awards including "Emerging Star" and "Pillar of Success."</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">10<span class="accent">+</span></span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">5</span>
+              <span class="stat-label">Companies</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">1M<span class="accent">+</span></span>
+              <span class="stat-label">API Calls/Day</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">99.99<span class="accent">%</span></span>
+              <span class="stat-label">Uptime Achieved</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card reveal delay-1">
+          <div class="about-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-initials">HG</div>
+          </div>
+          <div class="about-details">
+            <div class="detail-row">
+              <span class="detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <span>New Delhi, India</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+              </span>
+              <span>Senior Technical Lead @ Fitpass</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              </span>
+              <span>+91-7303997706</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              <span>himanshug8859@gmail.com</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </span>
+              <span>B.Tech — G.B. Pant Engineering College</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">02. Skills</span>
+        <h2 class="section-title">Technical Arsenal</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span>Go (Golang)</span><span>Core Java</span><span>Python</span><span>PHP</span><span>Shell Scripting</span><span>PL/SQL</span>
+          </div>
+        </div>
+        <div class="skill-category reveal delay-1">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <h3>Frameworks & APIs</h3>
+          <div class="skill-tags">
+            <span>gRPC</span><span>REST</span><span>Gin</span><span>GORM</span><span>WebSockets</span><span>Cobra CLI</span>
+          </div>
+        </div>
+        <div class="skill-category reveal delay-2">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <h3>Databases</h3>
+          <div class="skill-tags">
+            <span>PostgreSQL</span><span>MongoDB</span><span>Redis</span><span>Elasticsearch</span><span>Cassandra</span><span>MySQL</span><span>Oracle</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3>Messaging & Streaming</h3>
+          <div class="skill-tags">
+            <span>Kafka</span><span>RabbitMQ</span><span>AWS SQS</span><span>Redis Pub/Sub</span>
+          </div>
+        </div>
+        <div class="skill-category reveal delay-1">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Cloud & DevOps</h3>
+          <div class="skill-tags">
+            <span>AWS EKS</span><span>Lambda</span><span>EC2 / S3</span><span>GCP</span><span>Docker</span><span>Kubernetes</span><span>Terraform</span><span>Helm</span><span>GitLab CI/CD</span>
+          </div>
+        </div>
+        <div class="skill-category reveal delay-2">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+          </div>
+          <h3>Observability</h3>
+          <div class="skill-tags">
+            <span>Datadog</span><span>Grafana</span><span>Kibana</span><span>New Relic</span><span>Prometheus</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">03. Experience</span>
+        <h2 class="section-title">Work History</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Senior Technical Lead — Backend</h3>
+                <span class="timeline-company">Fitpass</span>
+              </div>
+              <span class="timeline-period">Oct 2025 — Present</span>
+            </div>
+            <span class="timeline-domain">Health & Fitness / SaaS</span>
+            <ul class="timeline-points">
+              <li>Leading a team of 5 backend engineers — owning architecture, delivery, and production quality for core consumer and payments platforms</li>
+              <li>Designed Golang microservices architecture with Gin, GORM, PostgreSQL; reduced boilerplate and improved developer onboarding speed</li>
+              <li>Architected unified cart system supporting multiple product types, pricing models, and checkout flows</li>
+              <li>Owned Razorpay payments integration including webhook handling, retries, reconciliation, and failure recovery</li>
+              <li>Implemented feature flag & A/B testing framework via VWO; designed user journey tracking with Segment</li>
+              <li>Reduced post-production bugs by ~80% through improved architecture, stricter reviews, and observability practices</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Golang</span><span>Gin</span><span>PostgreSQL</span><span>Razorpay</span><span>Kubernetes</span><span>AWS</span><span>Datadog</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Senior Technical Lead — Software Developer</h3>
+                <span class="timeline-company">Toyota Connected North America (via Vdart Digital)</span>
+              </div>
+              <span class="timeline-period">May 2021 — Sep 2025</span>
+            </div>
+            <span class="timeline-domain">Automotive / Connected Vehicles</span>
+            <ul class="timeline-points">
+              <li>Developed gRPC/REST APIs handling <strong>1M+ calls/day</strong>, improving average response times by 35%</li>
+              <li>Built service scheduling APIs in Golang + MongoDB microservices, reducing service latency by ~40%</li>
+              <li>Deployed to AWS EKS via Terraform & Helm, achieving <strong>99.99% uptime</strong>; cut deployment time from 45 min → under 10 min</li>
+              <li>Built async pipeline with Kafka & Redis, processing <strong>200K+ messages/day</strong> with sub-second latency</li>
+              <li>Led Java-based dealer search with OpenSearch & Elasticsearch, improving search response by ~50%</li>
+              <li>Built OCR pipeline with Amazon Textract, cutting VIN extraction from 2 min → under 10 seconds</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Golang</span><span>gRPC</span><span>MongoDB</span><span>Kafka</span><span>AWS EKS</span><span>Terraform</span><span>Elasticsearch</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Senior Software Developer</h3>
+                <span class="timeline-company">GlobalLogic Pvt Ltd</span>
+              </div>
+              <span class="timeline-period">May 2019 — Sep 2021</span>
+            </div>
+            <span class="timeline-domain">Cybersecurity / SIEM</span>
+            <ul class="timeline-points">
+              <li>Developed Elastic Beats log collectors for AWS S3, Azure, and GSuite, reducing log ingestion delays by ~30%</li>
+              <li>Enhanced LogRhythm SIEM, improving detection-to-response time for incidents by 20%</li>
+              <li>Built CLI automation with Golang's Cobra framework, reducing manual setup effort by ~70%</li>
+              <li>Implemented Docker & GCP Cloud Build CI pipelines, improving build frequency from weekly to multiple times daily</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Golang</span><span>Cobra CLI</span><span>Elasticsearch</span><span>Docker</span><span>GCP</span><span>AWS S3</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Developer</h3>
+                <span class="timeline-company">Sendinblue (now Brevo)</span>
+              </div>
+              <span class="timeline-period">Sep 2018 — May 2019</span>
+            </div>
+            <span class="timeline-domain">SaaS / Email Marketing / CRM</span>
+            <ul class="timeline-points">
+              <li>Built centralized organization-level inbox for multiple accounts, reducing account-switching time by 80%</li>
+              <li>Implemented Gorilla WebSockets for real-time updates, processing <strong>50K+ concurrent connections</strong></li>
+              <li>Integrated RabbitMQ for async messaging, ensuring 99.9% delivery reliability</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Golang</span><span>WebSockets</span><span>MongoDB</span><span>RabbitMQ</span><span>Redis</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Programmer</h3>
+                <span class="timeline-company">IndiaMart Intermesh Pvt Ltd</span>
+              </div>
+              <span class="timeline-period">Aug 2015 — Sep 2018</span>
+            </div>
+            <span class="timeline-domain">E-Commerce / B2B Marketplace</span>
+            <ul class="timeline-points">
+              <li>Migrated legacy PHP APIs to Golang microservices, improving performance by ~45%</li>
+              <li>Migrated DB from Oracle to PostgreSQL & Cassandra, improving query performance by 25%</li>
+              <li>Integrated Redis caching across APIs, cutting average page load times by ~50%</li>
+              <li>Deployed ML models for automated product classification with 90%+ accuracy</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Golang</span><span>PHP</span><span>PostgreSQL</span><span>Cassandra</span><span>Redis</span><span>Python</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">04. Projects</span>
+        <h2 class="section-title">Featured Work</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal featured">
+          <div class="project-header">
+            <span class="project-domain">Automotive</span>
+            <div class="project-links">
+              <span class="project-badge">Featured</span>
+            </div>
+          </div>
+          <h3>Toyota OneApp — Service Scheduling Backend</h3>
+          <p>Large-scale automotive connected services platform for Toyota North America enabling millions of users to schedule vehicle service appointments. Handles high-volume API traffic, real-time data processing, and integrations with third-party service providers across North America.</p>
+          <div class="project-highlights">
+            <span class="highlight"><strong>1M+</strong> API calls/day</span>
+            <span class="highlight"><strong>35%</strong> faster response</span>
+            <span class="highlight"><strong>99.99%</strong> uptime</span>
+          </div>
+          <div class="project-tags">
+            <span>Golang</span><span>gRPC</span><span>MongoDB</span><span>Kafka</span><span>AWS EKS</span><span>Terraform</span><span>Redis</span>
+          </div>
+          <span class="project-period">May 2021 — Sep 2025</span>
+        </div>
+
+        <div class="project-card reveal delay-1 featured">
+          <div class="project-header">
+            <span class="project-domain">Health & Fitness</span>
+            <div class="project-links">
+              <span class="project-badge">Current</span>
+            </div>
+          </div>
+          <h3>Fitpass — Consumer & Payments Platform</h3>
+          <p>Fitness subscription platform serving consumers across India, providing access to gyms, fitness studios, and wellness services. Powers core consumer journeys including onboarding, cart, checkout, payments, and habit-based engagement features.</p>
+          <div class="project-highlights">
+            <span class="highlight"><strong>~80%</strong> fewer bugs</span>
+            <span class="highlight"><strong>5-person</strong> team led</span>
+          </div>
+          <div class="project-tags">
+            <span>Golang</span><span>Gin</span><span>PostgreSQL</span><span>Razorpay</span><span>VWO</span><span>Segment</span><span>Docker</span>
+          </div>
+          <span class="project-period">Oct 2025 — Present</span>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-domain">Automotive</span>
+          </div>
+          <h3>Toyota OneApp — Dealer Search & Inventory</h3>
+          <p>Real-time dealer search and inventory platform for Toyota North America. Ingests dealer CSV inventory files via FTP through an event-driven pipeline into Elasticsearch, exposed via a layered Java microservices architecture.</p>
+          <div class="project-highlights">
+            <span class="highlight"><strong>~50%</strong> better search</span>
+            <span class="highlight">Near real-time sync</span>
+          </div>
+          <div class="project-tags">
+            <span>Java</span><span>Golang</span><span>Elasticsearch</span><span>MongoDB</span><span>AWS SQS</span><span>S3</span><span>Kubernetes</span>
+          </div>
+          <span class="project-period">May 2021 — Sep 2025</span>
+        </div>
+
+        <div class="project-card reveal delay-1">
+          <div class="project-header">
+            <span class="project-domain">Cybersecurity</span>
+          </div>
+          <h3>SIEM — Security Information & Event Management</h3>
+          <p>Enterprise-scale SIEM platform integrating log collection, threat detection, and incident response across multi-cloud environments (AWS, Azure, GCP). Ingests security events from thousands of sources for real-time threat monitoring.</p>
+          <div class="project-highlights">
+            <span class="highlight"><strong>~30%</strong> faster ingestion</span>
+            <span class="highlight"><strong>~70%</strong> less manual effort</span>
+          </div>
+          <div class="project-tags">
+            <span>Golang</span><span>Cobra CLI</span><span>Elasticsearch</span><span>Docker</span><span>GCP</span><span>AWS S3</span>
+          </div>
+          <span class="project-period">May 2019 — Sep 2021</span>
+        </div>
+
+        <div class="project-card reveal delay-2">
+          <div class="project-header">
+            <span class="project-domain">SaaS / CRM</span>
+          </div>
+          <h3>Sendinblue — Organization-Level Inbox</h3>
+          <p>Centralized multi-account inbox for Sendinblue (now Brevo), enabling organizations to manage communications across multiple accounts from a unified interface with real-time messaging capabilities.</p>
+          <div class="project-highlights">
+            <span class="highlight"><strong>50K+</strong> concurrent connections</span>
+            <span class="highlight"><strong>99.9%</strong> delivery reliability</span>
+          </div>
+          <div class="project-tags">
+            <span>Golang</span><span>WebSockets</span><span>MongoDB</span><span>RabbitMQ</span><span>Redis</span>
+          </div>
+          <span class="project-period">Sep 2018 — May 2019</span>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-domain">E-Commerce</span>
+          </div>
+          <h3>IndiaMart — E-Commerce Backend Platform</h3>
+          <p>High-traffic B2B e-commerce platform (IndiaMart Intermesh) serving millions of buyers and sellers across India. Powers product listings, user management, payments, and display advertising at scale.</p>
+          <div class="project-highlights">
+            <span class="highlight"><strong>~45%</strong> performance gain</span>
+            <span class="highlight"><strong>90%+</strong> ML accuracy</span>
+          </div>
+          <div class="project-tags">
+            <span>Golang</span><span>PHP</span><span>PostgreSQL</span><span>Cassandra</span><span>Redis</span><span>Python</span>
+          </div>
+          <span class="project-period">Aug 2015 — Sep 2018</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">05. Contact</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-left reveal">
+          <p class="contact-intro">I'm open to new opportunities, collaborations, and interesting conversations. Whether you have a project in mind or just want to say hi — drop a message!</p>
+          <div class="contact-methods">
+            <a href="mailto:himanshug8859@gmail.com" class="contact-method">
+              <div class="contact-method-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span class="contact-method-label">Email</span>
+                <span class="contact-method-value">himanshug8859@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+917303997706" class="contact-method">
+              <div class="contact-method-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <span class="contact-method-label">Phone</span>
+                <span class="contact-method-value">+91-7303997706</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/himanshu-gautam-a6170882" target="_blank" rel="noopener" class="contact-method">
+              <div class="contact-method-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <div>
+                <span class="contact-method-label">LinkedIn</span>
+                <span class="contact-method-value">himanshu-gautam-a6170882</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form reveal delay-1" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Send Message</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">HG<span class="accent">.</span></span>
+        <p class="footer-copy">Built with care · Himanshu Gautam · 2025</p>
+        <div class="footer-socials">
+          <a href="https://linkedin.com/in/himanshu-gautam-a6170882" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:himanshug8859@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.907 1.528-1.148C21.69 2.28 24 3.434 24 5.457z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
